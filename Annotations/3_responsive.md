@@ -74,7 +74,7 @@
 ``` 
 
 #### Vertical and horizontal alignment
-- class align-items-* (in a row; vertical alignment)
+- class align-items-* / align-self-* (in a row; vertical alignment)
 - class justify-content-* (horizontal)
 - class offset-*: allows moving through the columns
 - eg.:
