@@ -11,3 +11,8 @@ Package Manager
 Contains:
 - JS files
 - package.json (manifest)
+
+## Commands
+- npm init
+- npm install --save-dev (specifies development dependency) OR --save
+- 
