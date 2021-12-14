@@ -46,13 +46,16 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-md-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm-6 align-self-center">
+                <div class="col-12 col-md-3 align-self-center">
                     <img src="img/logo.png" alt="logo" class="img-fluid">
                     <!-- img-fluid for responsive images -->
+                </div>
+                <div class="col-12 col-md-3 align-self-center">
+                    <a href="#reserve-form" class="btn btn-block btn-sm btn-warning btn-reserve">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -106,7 +109,7 @@
             </div>
         </div>
 
-        <div class="row row-content">
+        <div class="row row-content d-none d-sm-block">
             <div class="col-12 col-sm-9"> 
                 <h2> Facts &amp; Figures </h2> 
                 <div class="table-responsive">
@@ -151,7 +154,7 @@
             <div class="col-12 col-sm-3"></div>
         </div>
 
-        <div class="row row-content justify-content-center">
+        <div class="row row-content justify-content-center" id="reserve-form">
             <div class="col-12 col-sm-8">
                 <div class="card">
                     <div class="card-header bg-warning">
@@ -186,7 +189,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <button class="btn btn-primary offset-2">Reserve</button>
+                                <button class="btn btn-primary offset-1 offset-sm-2">Reserve</button>
                             </div>
                         </form>
                     </div>

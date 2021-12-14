@@ -37,3 +37,9 @@ body {
 .navbar-dark {
     background-color: #512DA8;
 }
+
+.btn-reserve {
+    min-height: 40px;
+    font-size: medium;
+    font-weight: 600;
+}
