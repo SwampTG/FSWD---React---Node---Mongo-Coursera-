@@ -20,6 +20,38 @@
     -->
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
+            <div class="row row-content">
+                <div class="col">
+                    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="list-box">
+                            <div class="carousel-item active">
+                                <img class="d-block img-fluid" src="img/uthappizza.png" alt="Uthapizza">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Uthapizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-default">$4.99</span></h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+
+                            </div>
+                            <div class="carousel-item">
+
+                            </div>
+                            
+                            <ol class="carousel-indicators">
+                                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#mycarousel" data-slide-to="1"></li>
+                                <li data-target="#mycarousel" data-slide-to="2"></li>
+                            </ol>
+                        </div>
+                        <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <!-- data-target is the id of the target element with #ID 
                 data-toggle is the element behaviour
@@ -95,7 +127,7 @@
                 </div>
                 <div class="col-12 col-md-3 align-self-center">
                     <a
-                    class="btn btn-block btn-sm btn-warning btn-reserve"
+                    class="btn btn-block nav-link btn-warning btn-reserve"
                     data-toggle="tooltip" title="Or Call Us at <br> <strong>+852 12345678</strong>"
                     data-placement="bottom" href="#reserve-form" 
                     data-html="true">
