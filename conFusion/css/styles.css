@@ -52,3 +52,19 @@ body {
   position: absolute;
   bottom: 0;
   z-index: 1; }
+
+.modal-main {
+  margin: 0 auto;
+  padding: 0 0; }
+  .modal-main .modal-content {
+    margin: 0 auto;
+    padding: 0 0; }
+    .modal-main .modal-content .modal-header {
+      background: #512DA8;
+      color: floralwhite; }
+      .modal-main .modal-content .modal-header .close {
+        color: floralwhite; }
+    .modal-main .modal-content .modal-body {
+      background: #D1C4E9; }
+      .modal-main .modal-content .modal-body label {
+        font-weight: 500; }
