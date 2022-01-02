@@ -39,7 +39,7 @@
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a href=""><span class="fa fa-sign-in"></span> Login</a>
+                    <a id="loginButton"><span class="fa fa-sign-in"></span> Login</a>
                 </span>
             </div>
         </div>
@@ -51,7 +51,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" id="dismissLogin">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -73,7 +73,7 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" id="cancelLogin">Cancel</button>
                             <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
                         </div>
                     </form>
@@ -94,7 +94,7 @@
                     <!-- img-fluid for responsive images -->
                 </div>
                 <div class="col-12 col-md-3 align-self-center">
-                    <a class="btn btn-block nav-link btn-warning btn-reserve">
+                    <a class="btn btn-block nav-link btn-warning btn-reserve" id="reserveButton">
                         Reserve Table
                     </a>
                 </div>
@@ -107,7 +107,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-warning">
                     <h2 class="modal-title">Reserve a Table</h2>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" id="dismissReserve">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form action="post">
@@ -149,7 +149,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <button class="btn btn-secondary offset-2" data-dismiss="modal">Cancel</button>
+                            <button class="btn btn-secondary offset-2" id="cancelReserve">Cancel</button>
                             <button class="btn btn-primary ml-1">Reserve</button>
                         </div>
                     </form>
@@ -313,16 +313,36 @@
                 $("#carouselButton")
                   .children("span")
                   .removeClass("fa-pause")
-                  .addClass("fa-play")
+                  .addClass("fa-play");
             }
             else {
                 $("#mycarousel").carousel("cycle");
                 $("#carouselButton").children("span").removeClass("fa-play")
                   .addClass("fa-pause");
             }
-        })
-        // Modal triggers
-
+        });
+        // Reserve Modal trigger
+        $("#reserveButton").click(()=>{
+            $("#reserveModal").modal();
+        });
+        //dismiss reserve
+        $("#dismissReserve").click(()=>{
+            $("#reserveModal").modal("hide");
+        });
+        $("#cancelReserve").click(()=>{
+            $("#reserveModal").modal("hide");
+        });
+        // Login modal Trigger
+        $("#loginButton").click(()=>{
+            $("#loginModal").modal();
+        });
+        // dismiss login
+        $("#dismissLogin").click(()=>{
+            $("#loginModal").modal("hide");
+        });
+        $("#cancelLogin").click(()=>{
+            $("#loginModal").modal("hide");
+        });
     });
 </script>
 </html>
